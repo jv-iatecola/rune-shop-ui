@@ -9,6 +9,7 @@ export function header(){
 
     const runeShopButtonElement= document.createElement("button")
     runeShopButtonElement.append(runeShopImageElement)
+    runeShopButtonElement.id = "runeShopButton"
 
     const searchIconElement = document.createElement("span")
     searchIconElement.classList.add("search-icon")
@@ -16,9 +17,13 @@ export function header(){
     searchIconElement.textContent = "search"
 
     const searchBarInputElement = document.createElement("input")
-    searchBarInputElement.type = "search"
     searchBarInputElement.classList.add("search-input")
     searchBarInputElement.placeholder = "Search"
+    searchBarInputElement.type = "search"
+
+    const centralDiv = document.createElement("div")
+    centralDiv.id = "centralDiv"
+    centralDiv.append(searchBarInputElement, searchIconElement)
 
     const cartIconElement = document.createElement("span")
     cartIconElement.classList.add("cart-icon")
@@ -26,13 +31,18 @@ export function header(){
     cartIconElement.textContent = "shopping_cart"
 
     const cartButtonElement = document.createElement("button")
+    cartButtonElement.id = "cartButton"
     cartButtonElement.append(cartIconElement)
 
     const menuIconElement = document.createElement("span")
     menuIconElement.classList.add("menu-icon")
     menuIconElement.classList.add("material-symbols-outlined")
     menuIconElement.textContent = "menu"
+
+    const rightDiv = document.createElement("div")
+    rightDiv.id = "rightDiv"
+    rightDiv.append(cartButtonElement, menuIconElement)
     
-    container.append(runeShopButtonElement, searchBarInputElement, searchIconElement, cartButtonElement, menuIconElement)
+    container.append(runeShopButtonElement, centralDiv, rightDiv)
     document.body.prepend(container)
 }

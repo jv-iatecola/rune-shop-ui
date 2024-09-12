@@ -1,13 +1,46 @@
+body{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
 #header-container {
-    width: max-content;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    align-content: center;
     background-color: black;
-    padding: 16px;
+    padding: 20px;
+    gap: 16px 0px;    
+}
+#runeShopButton {
+    background: transparent;
+    border: none;
+}
+
+#centralDiv {
+    /* align-items: center; */
+}
+
+#cartButton {
+    background: transparent;
+    border: none;
 }
 .search-input {
+    border: none;
+    border-radius: 14px;
     font-size: 16px;
     color: #333333;
-    margin-left: 16px;
+    gap: 0px 100px;
+}
+.search-icon {
+    color: white;
+}
+
+.cart-icon {
+    color: white;
+}
+.menu-icon {
+    color: white;
 }
