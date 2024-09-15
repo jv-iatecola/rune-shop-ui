@@ -1,16 +1,16 @@
 export function productCard(productCardProps){
     const container = document.createElement("div")
 
-    const runeName = document.createElement("p")
-    runeName.textContent = productCardProps.name
+    const runeNameElement = document.createElement("p")
+    runeNameElement.textContent = productCardProps.name
 
-    const runeImage = document.createElement("img")
-    runeImage.width = "500"
-    runeImage.src = productCardProps.image
+    const runeImageElement = document.createElement("img")
+    runeImageElement.width = "500"
+    runeImageElement.src = productCardProps.image
 
-    const runePrice = document.createElement("p")
-    runePrice.textContent = productCardProps.price
+    const runePriceElement = document.createElement("p")
+    runePriceElement.textContent = productCardProps.price
 
-    container.append(runeName, runeImage, runePrice)
+    container.append(runeNameElement, runeImageElement, runePriceElement)
     document.body.prepend(container)
 }

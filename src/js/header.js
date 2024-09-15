@@ -21,9 +21,9 @@ export function header(){
     searchBarInputElement.placeholder = "Search"
     searchBarInputElement.type = "search"
 
-    const centralDiv = document.createElement("div")
-    centralDiv.classList.add("centralDiv")
-    centralDiv.append(searchBarInputElement, searchIconElement)
+    const centralDivElement = document.createElement("div")
+    centralDivElement.classList.add("centralDiv")
+    centralDivElement.append(searchBarInputElement, searchIconElement)
 
     const cartIconElement = document.createElement("span")
     cartIconElement.classList.add("cart-icon")
@@ -39,10 +39,10 @@ export function header(){
     menuIconElement.classList.add("material-symbols-outlined")
     menuIconElement.textContent = "menu"
 
-    const rightDiv = document.createElement("div")
-    rightDiv.classList.add("rightDiv")
-    rightDiv.append(cartButtonElement, menuIconElement)
+    const rightDivElement = document.createElement("div")
+    rightDivElement.classList.add("rightDiv")
+    rightDivElement.append(cartButtonElement, menuIconElement)
     
-    container.append(runeShopButtonElement, centralDiv, rightDiv)
+    container.append(runeShopButtonElement, centralDivElement, rightDivElement)
     document.body.prepend(container)
 }
