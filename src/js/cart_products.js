@@ -1,4 +1,4 @@
-export function cartProducts(cartRuneList){
+export function cartProducts(cartRuneList){  
     cartRuneList.forEach(rune => {
         const container = document.createElement("div")
         container.classList.add("cart-container")
@@ -11,8 +11,8 @@ export function cartProducts(cartRuneList){
         runeName.textContent = rune.runeName
 
         const runePrice = document.createElement("p")
-        runePrice.textContent = rune.runePrice
-
+        runePrice.textContent = `$ ${rune.runePrice}`
+        
         const runeInfoDivElement = document.createElement("div")
         runeInfoDivElement.append(runeName, runePrice)
 
