@@ -20,10 +20,8 @@ export function productDisplay(productsList){
         const runePriceElement = document.createElement("p")
         runePriceElement.textContent = `$ ${product.runePrice}`
         
-        productContainerElement.append(runeNameElement, runeImageElement, runePriceElement)
 
         const productButtonElement = document.createElement("button")
-        // productButtonElement.classList.add("product-buttom")
         productButtonElement.append(runeNameElement, runeImageElement, runePriceElement)
         productContainerElement.append(productButtonElement)
 
