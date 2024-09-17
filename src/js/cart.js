@@ -1,14 +1,10 @@
-import { productDisplay } from "./product-display";
-import { productCard } from "./product-card";
 import { header } from "./header";
+import { cartProducts } from "./cart-products";
+import { totalPrice } from "./total-price";
+import { buyButton } from "./button";
 
-const productCardProps = {
-    name: "Naramon Rune",
-    image: "https://media.discordapp.net/attachments/1181755843050479687/1278743799375466507/FB_IMG_1724946593595.jpg?ex=66e06af7&is=66df1977&hm=cd480ee709f8bed71f80bc8809e9e4d1cd766daaf95d9ae73d8d7e1df4ca5a19&=&format=webp&width=548&height=676",
-    price: "$ 49.90"
-}
 
-const productList = [
+const cartRuneList = [
     {
         runeImage: "https://cdn.discordapp.com/attachments/863410455291494440/1284657599647715429/Naramon_Rune.png?ex=66eab9df&is=66e9685f&hm=f8fc8583625ef692d35fb8f7acc4e8165cdd64702324aad6842a48ceb34c412b&",
         runeName: "Naramon Rune",
@@ -25,7 +21,10 @@ const productList = [
         runePrice: 29.99
     }
 ]
+buyButton(cartRuneList)
 
-productDisplay(productList)
+totalPrice(cartRuneList)
+
+cartProducts(cartRuneList)
 
 header()

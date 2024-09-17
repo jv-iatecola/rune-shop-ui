@@ -1,0 +1,13 @@
+.cart-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.empty-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
